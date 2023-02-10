@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello NBA
+{% endblock %}
+
+{% block body %}
+
+	<div class="container mt-4 mb-4">
+
+	{% for conference in conferences %}
+		<a href="{{path("app_main_show",{id:conference.id})}}">
+        	<img src="{{conference.logo}}" class="img-fluid ms-4 mx-auto" style="width: 450px" alt="{{conference.name}}">
+        </a>
+		
+	{% endfor %}
+	</div>
+
+{% endblock %}

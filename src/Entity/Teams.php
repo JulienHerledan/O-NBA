@@ -37,6 +37,8 @@ class Teams
      */
     private $conference;
 
+
+
     public function getId(): ?int
     {
         return $this->id;
